@@ -12,6 +12,7 @@ class AdminLoginCest
 
     //Writing An Automated Tweet o.O
 
+    
     $I->fillField(Page\Login::$newPost, 'Just setting up my Twitter. #mySecondTweet');
     $I->click(Page\Login::$clickTweet);
     }
