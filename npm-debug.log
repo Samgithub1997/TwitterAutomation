@@ -1,0 +1,141 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'Selenium.WebDriver',
+1 verbose cli   '-Version',
+1 verbose cli   '3.4.0' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData Selenium.WebDriver
+8 silly fetchPackageMetaData 3.4.0
+9 silly fetchNamedPackageData Selenium.WebDriver
+10 silly mapToRegistry name Selenium.WebDriver
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/Selenium.WebDriver
+14 silly fetchNamedPackageData 3.4.0
+15 silly mapToRegistry name 3.4.0
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/3.4.0
+19 verbose request uri https://registry.npmjs.org/Selenium.WebDriver
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 12:47:50 AM
+22 verbose request id 2844b8bd617f2abe
+23 http request GET https://registry.npmjs.org/Selenium.WebDriver
+24 verbose request uri https://registry.npmjs.org/3.4.0
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 12:47:50 AM
+27 http request GET https://registry.npmjs.org/3.4.0
+28 http 404 https://registry.npmjs.org/Selenium.WebDriver
+29 verbose headers { 'content-type': 'application/json',
+29 verbose headers   'cache-control': 'max-age=0',
+29 verbose headers   'content-length': '2',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   date: 'Thu, 22 Feb 2018 19:17:53 GMT',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'x-served-by': 'cache-sin18027-SIN',
+29 verbose headers   'x-cache': 'MISS',
+29 verbose headers   'x-cache-hits': '0',
+29 verbose headers   'x-timer': 'S1519327071.996269,VS0,VE2109',
+29 verbose headers   vary: 'Accept-Encoding' }
+30 silly get cb [ 404,
+30 silly get   { 'content-type': 'application/json',
+30 silly get     'cache-control': 'max-age=0',
+30 silly get     'content-length': '2',
+30 silly get     'accept-ranges': 'bytes',
+30 silly get     date: 'Thu, 22 Feb 2018 19:17:53 GMT',
+30 silly get     via: '1.1 varnish',
+30 silly get     connection: 'keep-alive',
+30 silly get     'x-served-by': 'cache-sin18027-SIN',
+30 silly get     'x-cache': 'MISS',
+30 silly get     'x-cache-hits': '0',
+30 silly get     'x-timer': 'S1519327071.996269,VS0,VE2109',
+30 silly get     vary: 'Accept-Encoding' } ]
+31 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/Selenium.WebDriver
+31 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+31 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+31 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+31 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+31 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+31 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+31 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+31 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+31 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+31 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+31 silly fetchPackageMetaData  error for Selenium.WebDriver { [Error: Registry returned 404 for GET on https://registry.npmjs.org/Selenium.WebDriver] pkgid: 'Selenium.WebDriver', statusCode: 404, code: 'E404' }
+32 http 404 https://registry.npmjs.org/3.4.0
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=0',
+33 verbose headers   'content-length': '2',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Thu, 22 Feb 2018 19:17:53 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-sin18022-SIN',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1519327071.000690,VS0,VE2256',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 silly get cb [ 404,
+34 silly get   { 'content-type': 'application/json',
+34 silly get     'cache-control': 'max-age=0',
+34 silly get     'content-length': '2',
+34 silly get     'accept-ranges': 'bytes',
+34 silly get     date: 'Thu, 22 Feb 2018 19:17:53 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-sin18022-SIN',
+34 silly get     'x-cache': 'MISS',
+34 silly get     'x-cache-hits': '0',
+34 silly get     'x-timer': 'S1519327071.000690,VS0,VE2256',
+34 silly get     vary: 'Accept-Encoding' } ]
+35 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/3.4.0
+35 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+35 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+35 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+35 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+35 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+35 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+35 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+35 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+35 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+35 silly fetchPackageMetaData  error for 3.4.0 { [Error: Registry returned 404 for GET on https://registry.npmjs.org/3.4.0] pkgid: '3.4.0', statusCode: 404, code: 'E404' }
+36 silly rollbackFailedOptional Starting
+37 silly rollbackFailedOptional Finishing
+38 silly runTopLevelLifecycles Starting
+39 silly runTopLevelLifecycles Finishing
+40 silly install printInstalled
+41 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/Selenium.WebDriver
+41 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+41 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+41 verbose stack     at emitTwo (events.js:87:13)
+41 verbose stack     at Request.emit (events.js:172:7)
+41 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+41 verbose stack     at emitOne (events.js:82:20)
+41 verbose stack     at Request.emit (events.js:169:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+42 verbose statusCode 404
+43 verbose pkgid Selenium.WebDriver
+44 verbose cwd /var/www/html/checking
+45 error Linux 4.4.0-109-generic
+46 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "Selenium.WebDriver" "-Version" "3.4.0"
+47 error node v4.2.6
+48 error npm  v3.5.2
+49 error code E404
+50 error 404 Registry returned 404 for GET on https://registry.npmjs.org/Selenium.WebDriver
+51 error 404
+52 error 404 'Selenium.WebDriver' is not in the npm registry.
+53 error 404 Your package name is not valid, because
+54 error 404 1. name can no longer contain capital letters
+55 error 404 Note that you can also install from a
+56 error 404 tarball, folder, http url, or git url.
+57 verbose exit [ 1, true ]

@@ -1,0 +1,22 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            url : 'https://twitter.com'
+            browser: chrome 
+           # port: 9515  ChromeDriver port
+           # use selnium version 3.5.1 not the latest one that is 3.9.1 
+            window_size: false
+            javascript : false
+            restart: true  
+            capabilities:
+            chromeOptions:
+                args: ["--headless", "--disable-gpu",--no-sandbox", "window-size=1920x1080"]
+            binary: "/usr/bin/google-chrome"
+        - \Helper\Acceptance

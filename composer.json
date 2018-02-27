@@ -1,0 +1,8 @@
+{
+    "require-dev": {
+        "codeception/codeception": "^2.3"
+    },
+    "require": {
+        "fzaninotto/faker": "^1.7"
+    }
+}
