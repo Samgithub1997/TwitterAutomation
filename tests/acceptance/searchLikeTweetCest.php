@@ -14,15 +14,22 @@ class searchLikeTweetCest
     $I->amOnPage(Page\searchLike::$url);
     $I->fillField(Page\searchLike::$searchTweet,'chris martin');
     $I->click(Page\searchLike::$searchButton);
-    
+        
+    //USING FAKER LIBRARY O.o
+
+    require_once('/var/www/html/TwitterAutomation/vendor/fzaninotto/faker/src/autoload.php');
+    // use the factory to create a Faker\Generator instance
+    $faker = Faker\Factory::create();
+
     //like buttons 
     $I->amOnPage(Page\searchLike::$url1);
     $I->see('chris martin');
     $I->click(Page\searchLike::$comment);
-    $I->fillField(Page\searchLike::$textarea,'Nice Work');
+    $I->fillField(Page\searchLike::$textarea,$faker->text);
     $I->click(Page\searchLike::$hitReply);
-  /*  $I->click(Page\searchLike::$like2);
-    $I->click(Page\searchLike::$like3);
+    
+    //$I->amOnPage(Page\searchLike::$url1);
+   /* $I->click(Page\searchLike::$like3);
     $I->click(Page\searchLike::$like4);
     $I->click(Page\searchLike::$like5);
     $I->click(Page\searchLike::$like6);
