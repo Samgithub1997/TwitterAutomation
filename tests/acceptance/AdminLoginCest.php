@@ -11,9 +11,11 @@ class AdminLoginCest
     $I->click(Page\Login::$loginButton);
 
     //Writing An Automated Tweet o.O
-    
-    
-    $I->fillField(Page\Login::$newPost, 'Just setting up my Twitter. #mySecondTweet');
+    require_once('/var/www/html/TwitterAutomation/vendor/fzaninotto/faker/src/autoload.php');
+    // use the factory to create a Faker\Generator instance
+    $fakr = Faker\Factory::create();
+
+    $I->fillField(Page\Login::$newPost,$fakr->text);
     $I->click(Page\Login::$clickTweet);
     }
 }
