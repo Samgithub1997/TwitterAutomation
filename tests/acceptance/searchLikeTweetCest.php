@@ -28,9 +28,9 @@ class searchLikeTweetCest
     $I->fillField(Page\searchLike::$textarea,$faker->text);
     $I->click(Page\searchLike::$hitReply);
     
-    //$I->amOnPage(Page\searchLike::$url1);
-   /* $I->click(Page\searchLike::$like3);
-    $I->click(Page\searchLike::$like4);
+   // $I->amOnPage(Page\searchLike::$url1);
+   // $I->click(Page\searchLike::$like1);
+   /* $I->click(Page\searchLike::$like4);
     $I->click(Page\searchLike::$like5);
     $I->click(Page\searchLike::$like6);
     $I->click(Page\searchLike::$like7);
