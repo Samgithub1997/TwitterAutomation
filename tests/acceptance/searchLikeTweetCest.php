@@ -1,32 +1,28 @@
 <?php
-use Page;
-
+use Page\Login as Login;
+use Page\searchLike as SearchLike;
+use  Step\Acceptance\AdminLogin as LoginAccount;
 class searchLikeTweetCest
 {
-    public function searchAndLikeTweets(\AcceptanceTester $I){
-    $I->amOnPage(Page\Login::$url);
-    $I->fillField(Page\Login::$username, '7016347478');
-    $I->fillField(Page\Login::$password, 'testing123');
-    //click on Login button
-    $I->click(Page\Login::$loginButton);
-
+    
+    public function searchAndLikeTweets(LoginAccount $I){
+    $I->loginAccount();
     //Writing An Automated Test To Search And Like Tweets o.O
-    $I->amOnPage(Page\searchLike::$url);
-    $I->fillField(Page\searchLike::$searchTweet,'chris martin');
-    $I->click(Page\searchLike::$searchButton);
+    $I->amOnPage(SearchLike::$url);
+    $I->fillField(SearchLike::$searchTweet,'chris martin');
+    $I->click(SearchLike::$searchButton);
         
     //USING FAKER LIBRARY O.o
 
-    require_once('/var/www/html/TwitterAutomation/vendor/fzaninotto/faker/src/autoload.php');
     // use the factory to create a Faker\Generator instance
     $faker = Faker\Factory::create();
 
     //like buttons 
-    $I->amOnPage(Page\searchLike::$url1);
+    $I->amOnPage(SearchLike::$url1);
     $I->see('chris martin');
-    $I->click(Page\searchLike::$comment);
-    $I->fillField(Page\searchLike::$textarea,$faker->text);
-    $I->click(Page\searchLike::$hitReply);
+    $I->click(SearchLike::$comment);
+    $I->fillField(SearchLike::$textarea,$faker->text);
+    $I->click(SearchLike::$hitReply);
     
    // $I->amOnPage(Page\searchLike::$url1);
    // $I->click(Page\searchLike::$like1);
