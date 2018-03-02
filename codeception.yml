@@ -1,4 +1,4 @@
-paths:
+paths: #aa
     tests: tests
     output: tests/_output
     data: tests/_data

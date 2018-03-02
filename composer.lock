@@ -5,8 +5,8 @@
         "This file is @generated automatically"
     ],
     "hash": "24b5de74fc7ddd57d8d47434d9a36596",
-    "content-hash": "fd3eaf4e3aeeb0b39d2427efa27584e4",
-    "packages": [
+    "content-hash" : "fd3eaf4e3aeeb0b39d2427efa27584e4",
+    "packages" : [
         {
             "name": "fzaninotto/faker",
             "version": "v1.7.1",
