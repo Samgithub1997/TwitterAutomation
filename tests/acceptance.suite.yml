@@ -10,7 +10,6 @@ modules:
         - WebDriver:
             url : 'https://twitter.com'
             browser: chrome 
-           # port: 9515  ChromeDriver port
            # use selnium version 3.5.1 not the latest one that is 3.9.1 
             window_size: false
             javascript : false

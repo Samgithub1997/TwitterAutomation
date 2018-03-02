@@ -2,7 +2,7 @@
 namespace Step\Acceptance;
 use Page\Login as Login;
 
-
+/* */
 class AdminLogin extends \AcceptanceTester
 {
 	public function loginAccount(){
