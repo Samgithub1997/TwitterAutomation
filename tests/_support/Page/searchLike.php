@@ -3,21 +3,26 @@ namespace Page;
 
 class searchLike
 {
-    /**
-     * Basic route example for your current URL
-     * You can append any additional parameter to URL
-     * and use it in tests like: Page\Edit::route('/123-post');
-     */
+    //url just after loging in "https://www.twitter.com/"
     public static $url = '/';
+
+    //after searching for chris martin the url changes
     public static $url1 = '/search?q=chris%20martin&src=typd';
+    
+    //textbox to search for
     public static $searchTweet = ['xpath' => '//*[@id="search-query"]'];
     
-    public static $searchButton = ['xpath' => '/html/body/div[2]/div[1]/div[2]/div/div/div[3]/div/form/span/button'];
+    //search button
+    public static $searchButton = ['xpath' => '//*[@id="global-nav-search"]/span/button'];
 
 
     //comment on the first post 
     public static $comment = ['xpath' => '//*[@id="stream-item-tweet-969437304900251648"]/div/div[2]/div[4]/div[2]/div[1]/button/div/span[1]'];
+
+    //textarea for writing comment
     public static $textarea = ['xpath' => '//*[@id=\'tweet-box-global\']'];
+
+
     public static $hitReply = ['xpath' => '//*[@id="global-tweet-dialog-dialog"]/div[2]/div[4]/form/div[3]/div[2]/button'];
    // public static $closeCommentSection = ['xpath' => '/html/body/div[23]/div/button'];
     
