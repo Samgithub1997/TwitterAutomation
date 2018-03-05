@@ -11,6 +11,9 @@ class AdminLoginCest
     // use the factory to create a Faker\Generator instance
     $fakr = Faker\Factory::create();
 
+    $I->pauseExecution();
+
+    //Writing a tweet
     $I->fillField(Login::$newPost,$fakr->text);
     $I->click(Login::$clickTweet);
     }
