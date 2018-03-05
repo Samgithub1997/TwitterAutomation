@@ -13,11 +13,8 @@ class searchLike
     public static $searchTweet = ['xpath' => '//*[@id="search-query"]'];
     
     public static $searchButton = ['xpath' => '/html/body/div[2]/div[1]/div[2]/div/div/div[3]/div/form/span/button'];
-/*    public static function route($param)
-    {
-        return static::$URL.$param;
-    }
-*/
+
+
     //comment on the first post 
     public static $comment = ['xpath' => '/html/body/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div/div/div/div[2]/ol[1]/li[2]/div/div[2]/div[4]/div[2]/div[1]/button'];
     public static $textarea = ['xpath' => '//*[@id="tweet-box-global"]'];
