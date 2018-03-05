@@ -7,7 +7,11 @@ class AdminLoginCest
 
     
     public function postOnTwitter(LoginAccount $I){
+    
+    //Logging into twitter account
     $I->loginAccount();
+
+
     // use the factory to create a Faker\Generator instance
     $fakr = Faker\Factory::create();
 
@@ -16,6 +20,7 @@ class AdminLoginCest
     //Writing a tweet
     $I->fillField(Login::$newPost,$fakr->text);
     $I->click(Login::$clickTweet);
+    
     }
 }
 

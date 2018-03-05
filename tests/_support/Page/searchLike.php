@@ -10,7 +10,7 @@ class searchLike
      */
     public static $url = '/';
     public static $url1 = '/search?q=chris%20martin&src=typd';
-    public static $searchTweet = ['name' => 'q'];
+    public static $searchTweet = ['xpath' => '//*[@id="search-query"]'];
     
     public static $searchButton = ['xpath' => '/html/body/div[2]/div[1]/div[2]/div/div/div[3]/div/form/span/button'];
 /*    public static function route($param)
