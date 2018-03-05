@@ -23,7 +23,7 @@ class searchLike
     public static $textarea = ['xpath' => '//*[@id=\'tweet-box-global\']'];
 
 
-    public static $hitReply = ['xpath' => '//div[@class=\'TweetBoxToolbar-tweetButton tweet-button\']'];
+    public static $hitReply = ['xpath' => '//*[@id="global-tweet-dialog-dialog"]/div[2]/div[4]/form/div[3]/div[2]/button'];
    // public static $closeCommentSection = ['xpath' => '/html/body/div[23]/div/button'];
     
 
