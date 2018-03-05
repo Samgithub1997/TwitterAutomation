@@ -16,10 +16,16 @@ class Login
     public static $loginButton = ['xpath'=>'//button[contains(text(),\'Log in\')]'];
     
     //write  a tweet
-    public static $newPost = ['xpath' => '//*[@id="tweet-box-home-timeline"]'];
+    public static $newPost = ['xpath' => '//*[@id=\'tweet-box-home-timeline\']'];
 
     //post tweet 
     public static $clickTweet = ['xpath' => '/html/body/div[2]/div[2]/div/div[2]/div[2]/div/form/div[3]/div[2]/button'];
 
+/*
+ISSUES 
+clickTweet
+newPost
+searchButton
+*/
     
 }
