@@ -16,9 +16,9 @@ class searchLike
 
 
     //comment on the first post 
-    public static $comment = ['xpath' => '/html/body/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div/div/div/div[2]/ol[1]/li[3]/div/div[2]/div[4]/div[2]/div[1]/button'];
+    public static $comment = ['xpath' => '//*[@id="stream-item-tweet-969437304900251648"]/div/div[2]/div[4]/div[2]/div[1]/button/div/span[1]'];
     public static $textarea = ['xpath' => '//*[@id=\'tweet-box-global\']'];
-    public static $hitReply = ['xpath' => '/html/body/div[23]/div/div[2]/div[4]/form/div[3]/div[2]/button'];
+    public static $hitReply = ['xpath' => '//*[@id="global-tweet-dialog-dialog"]/div[2]/div[4]/form/div[3]/div[2]/button'];
    // public static $closeCommentSection = ['xpath' => '/html/body/div[23]/div/button'];
     
 
