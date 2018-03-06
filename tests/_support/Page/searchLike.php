@@ -10,23 +10,20 @@ class searchLike
     public static $url1 = '/search?q=chris%20martin&src=typd';
     
     //textbox to search for
-    public static $searchTweet = ['xpath' => '//*[@id="search-query"]'];
+    public static $searchTweet = ['xpath' => '//input[@id=\'search-query\']'];
     
     //search button
-    public static $searchButton = ['xpath' => '//*[@id="global-nav-search"]/span/button'];
+    public static $searchButton = ['xpath' => '//button[@class=\'Icon Icon--medium Icon--search nav-search\']'];
 
 
     //comment on the first post 
-    public static $comment = ['xpath' => '/html/body/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div/div/div/div[2]/ol[1]/li[2]/div/div[2]/div[3]/div[2]/div[1]/button'];
+    public static $comment = ['xpath' => '//button[@class=\'ProfileTweet-actionButton js-actionButton js-actionReply\']'];
 
     //textarea for writing comment
-    public static $textarea = ['xpath' => '//*[@id=\'tweet-box-global\']'];
+    public static $textarea = ['xpath' => '//div[@id=\'tweet-box-global\']'];
 
 
-    public static $hitReply = ['xpath' => '//*[@id="global-tweet-dialog-dialog"]/div[2]/div[4]/form/div[3]/div[2]/button'];
-   // public static $closeCommentSection = ['xpath' => '/html/body/div[23]/div/button'];
+    public static $hitReply = ['xpath' => '//button[@class=\'tweet-action EdgeButton EdgeButton--primary js-tweet-btn\']'];
+  
     
-
-    //likes
-    public static $like1 = ['xpath' => '/html/body/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div/div/div/div[2]/ol[1]/li[2]/div/div[2]/div[3]/div[2]/div[3]/button[1]'];
 }

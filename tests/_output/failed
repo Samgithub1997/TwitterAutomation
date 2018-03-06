@@ -1,2 +1,0 @@
-tests/acceptance/AdminLoginCest.php:postOnTwitter
-tests/acceptance/searchLikeTweetCest.php:searchAndLikeTweets
