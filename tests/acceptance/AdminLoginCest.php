@@ -1,10 +1,11 @@
 <?php
 use Page\Login as Login;
 use  Step\Acceptance\AdminLogin as LoginAccount;
+use  Step\Acceptance\fakerClass as fakerLibrary;
+
 class AdminLoginCest
 {
     //Writing An Automated Tweet o.O
-
     
     public function postOnTwitter(LoginAccount $I){
     
@@ -13,12 +14,13 @@ class AdminLoginCest
 
 
     // use the factory to create a Faker\Generator instance
-    $fakr = Faker\Factory::create();
 
     $I->pauseExecution();
 
+    
+  //  console('Important');
     //Writing a tweet
-    $I->fillField(Login::$newPost,$fakr->text);
+    $I->fillField(Login::$newPost,fakerLibrary::getRandomText());
     $I->click(Login::$clickTweet);
     
     }
