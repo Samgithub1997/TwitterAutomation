@@ -10,7 +10,7 @@ class searchLikeTweetCest
     public function searchAndLikeTweets(LoginAccount $I){
 
     //loging into twitter account
-    $I->loginAccount();
+    $I->loginAccount(Login::$usernameValue,Login::$passwordValue);
 
 
     //Search for chris martin
