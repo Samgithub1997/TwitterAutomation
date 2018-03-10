@@ -10,7 +10,7 @@ class AdminLoginCest
     public function postOnTwitter(LoginAccount $I){
     
     //Logging into twitter account
-    $I->loginAccount();
+    $I->loginAccount(Login::$usernameValue,Login::$passwordValue);
 
 
     // use the factory to create a Faker\Generator instance
