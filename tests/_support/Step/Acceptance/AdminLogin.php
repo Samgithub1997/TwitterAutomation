@@ -5,12 +5,12 @@ use Page\Login as Login;
 /* */
 class AdminLogin extends \AcceptanceTester
 {
-	public function loginAccount(){
+	public function loginAccount($user,$pass){
 	$I = $this;
 	$I->amOnPage(Login::$url);
 
-    $I->fillField(Login::$username, '7016347478');
-    $I->fillField(Login::$password, 'testing123');
+    $I->fillField(Login::$username, $user);
+    $I->fillField(Login::$password, $pass);
     //click on Login button
     $I->click(Login::$loginButton);
 	}
