@@ -9,12 +9,14 @@ class searchLike
     //after searching for chris martin the url changes
     public static $url1 = '/search?q=chris%20martin&src=typd';
     
+    //search for chris martin
+    public static $value = 'chris martin';
+
     //textbox to search for
     public static $searchTweet = ['xpath' => '//input[@id=\'search-query\']'];
     
     //search button
     public static $searchButton = ['xpath' => '//button[@class=\'Icon Icon--medium Icon--search nav-search\']'];
-
 
     //comment on the first post 
     public static $comment = ['xpath' => '//button[@class=\'ProfileTweet-actionButton js-actionButton js-actionReply\']'];
