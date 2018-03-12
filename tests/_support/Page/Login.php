@@ -25,13 +25,7 @@ class Login
     public static $newPost = ['xpath' => '//*[@id=\'tweet-box-home-timeline\']'];
 
     //post tweet 
-    public static $clickTweet = ['xpath' => '//*[@id="timeline"]/div[2]/div/form/div[3]/div[2]/button'];
+    public static $clickTweet = ['xpath' => '//button[@class=\'tweet-action EdgeButton EdgeButton--primary js-tweet-btn\']'];
 
-/*
-ISSUES 
-clickTweet done 
-newPost done
-searchButton
-*/
     
 }
