@@ -27,11 +27,5 @@ class Login
     //post tweet 
     public static $clickTweet = ['xpath' => '//button[@class=\'tweet-action EdgeButton EdgeButton--primary js-tweet-btn\']'];
 
-/*
-ISSUES 
-clickTweet done 
-newPost done
-searchButton
-*/
     
 }
