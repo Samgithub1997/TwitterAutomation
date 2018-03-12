@@ -3,7 +3,6 @@ use Page\Login as Login;
 use Page\searchLike as SearchLike;
 use Step\Acceptance\AdminLogin as LoginAccount;
 use Step\Acceptance\fakerClass as fakerLibrary;
-use Step\Acceptance\search as SearchStep;
 
 class searchLikeTweetCest
 {
